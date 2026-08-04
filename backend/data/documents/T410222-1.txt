@@ -1,0 +1,30 @@
+# STUDY_ID: T410222-1
+# COMPOUND: BAY-77-C
+# SPECIES: RAT
+# ROUTE: Dietary admixture
+# TITLE: 26-Week Chronic Oral Toxicity Study of BAY-77-C in Wistar Rats
+
+@@PAGE 1
+@@SECTION 1 Summary
+BAY-77-C was administered continuously via dietary admixture to Wistar Han rats for 26 weeks
+at target doses of 0, 5, 15, and 45 mg/kg/day. The NOAEL was 15 mg/kg/day. The principal
+target organs were the thyroid and liver.
+
+@@PAGE 52
+@@SECTION 3.6 Clinical Pathology
+Serum thyroid-stimulating hormone (TSH) was mildly elevated at 45 mg/kg/day, consistent with
+the thyroid histopathology. Total thyroxine (T4) showed a slight decrease at the high dose.
+Liver enzymes were minimally elevated at 15 and 45 mg/kg/day.
+
+@@PAGE 78
+@@SECTION 3.8 Histopathology
+Thyroid follicular cell hypertrophy was observed at 45 mg/kg/day in both sexes, graded minimal
+to mild. This finding is consistent with a well-characterized rodent-specific mechanism of
+enhanced thyroid hormone clearance secondary to hepatic enzyme induction and is generally
+considered of limited relevance to human risk assessment. Centrilobular hepatocellular
+hypertrophy was present at 15 and 45 mg/kg/day. No neoplastic changes were observed.
+
+@@PAGE 90
+@@SECTION 4 Conclusion
+The NOAEL was 15 mg/kg/day. Thyroid follicular cell hypertrophy at 45 mg/kg/day was attributed
+to a rodent-specific adaptive mechanism.

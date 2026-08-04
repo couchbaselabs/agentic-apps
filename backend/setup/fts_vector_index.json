@@ -1,0 +1,81 @@
+{
+  "name": "prince_documents_vec",
+  "type": "fulltext-index",
+  "sourceType": "gocbcore",
+  "sourceName": "prince",
+  "planParams": { "maxPartitionsPerPIndex": 1024, "indexPartitions": 1 },
+  "params": {
+    "doc_config": {
+      "mode": "scope.collection.type_field",
+      "type_field": "type",
+      "docid_prefix_delim": "",
+      "docid_regexp": ""
+    },
+    "mapping": {
+      "default_analyzer": "standard",
+      "default_datetime_parser": "dateTimeOptional",
+      "default_field": "_all",
+      "default_mapping": { "dynamic": false, "enabled": false },
+      "default_type": "_default",
+      "docvalues_dynamic": false,
+      "index_dynamic": false,
+      "store_dynamic": false,
+      "type_field": "_type",
+      "types": {
+        "main.documents": {
+          "dynamic": false,
+          "enabled": true,
+          "properties": {
+            "embedding": {
+              "enabled": true,
+              "dynamic": false,
+              "fields": [
+                {
+                  "name": "embedding",
+                  "type": "vector",
+                  "dims": 1536,
+                  "similarity": "dot_product",
+                  "index": true,
+                  "vector_index_optimized_for": "recall"
+                }
+              ]
+            },
+            "text": {
+              "enabled": true,
+              "dynamic": false,
+              "fields": [
+                { "name": "text", "type": "text", "analyzer": "en", "index": true, "store": true, "include_in_all": true, "include_term_vectors": true }
+              ]
+            },
+            "study_id": {
+              "enabled": true, "dynamic": false,
+              "fields": [ { "name": "study_id", "type": "text", "analyzer": "keyword", "index": true, "store": true, "docvalues": true } ]
+            },
+            "species": {
+              "enabled": true, "dynamic": false,
+              "fields": [ { "name": "species", "type": "text", "analyzer": "keyword", "index": true, "store": true, "docvalues": true } ]
+            },
+            "route": {
+              "enabled": true, "dynamic": false,
+              "fields": [ { "name": "route", "type": "text", "analyzer": "keyword", "index": true, "store": true, "docvalues": true } ]
+            },
+            "compound": {
+              "enabled": true, "dynamic": false,
+              "fields": [ { "name": "compound", "type": "text", "analyzer": "keyword", "index": true, "store": true, "docvalues": true } ]
+            },
+            "parent_section": {
+              "enabled": true, "dynamic": false,
+              "fields": [ { "name": "parent_section", "type": "text", "analyzer": "keyword", "index": true, "store": true, "docvalues": true } ]
+            },
+            "page": {
+              "enabled": true, "dynamic": false,
+              "fields": [ { "name": "page", "type": "number", "index": true, "store": true, "docvalues": true } ]
+            }
+          }
+        }
+      }
+    },
+    "store": { "indexType": "scorch", "segmentVersion": 16 }
+  },
+  "sourceParams": {}
+}

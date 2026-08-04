@@ -1,0 +1,29 @@
+# STUDY_ID: T700555-1
+# COMPOUND: BAY-92-D
+# SPECIES: RAT
+# ROUTE: Inhalation (nose-only)
+# TITLE: 4-Week Inhalation Toxicity Study of BAY-92-D in Sprague-Dawley Rats
+
+@@PAGE 1
+@@SECTION 1 Summary
+BAY-92-D was administered to Sprague-Dawley rats by nose-only inhalation for 4 weeks at
+target aerosol concentrations of 0, 50, 150, and 450 mg/m3, 6 hours/day, 5 days/week. The
+NOAEC (no-observed-adverse-effect concentration) was 50 mg/m3, based on respiratory tract
+findings at higher concentrations.
+
+@@PAGE 34
+@@SECTION 3.2 Clinical Signs
+Laboured breathing and reduced activity were observed at 450 mg/m3 during and shortly after
+exposure. No treatment-related clinical signs were observed at 50 or 150 mg/m3.
+
+@@PAGE 66
+@@SECTION 3.8 Histopathology
+Squamous metaplasia of the laryngeal epithelium was observed at 150 and 450 mg/m3, graded
+minimal to moderate, at the base of the epiglottis. Increased absolute and relative lung
+weights were recorded at 450 mg/m3, correlating with alveolar macrophage accumulation. The
+larynx is a recognized sensitive site for inhaled particulates in the rat; the finding was
+considered a local adaptive/irritant response. No systemic target organ toxicity was observed.
+
+@@PAGE 80
+@@SECTION 4 Conclusion
+The NOAEC was 50 mg/m3, based on laryngeal squamous metaplasia at 150 mg/m3 and above.

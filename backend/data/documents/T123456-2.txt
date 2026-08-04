@@ -1,0 +1,79 @@
+# STUDY_ID: T123456-2
+# COMPOUND: BAY-45-A
+# SPECIES: RAT
+# ROUTE: Oral gavage
+# TITLE: 13-Week Oral Toxicity Study of BAY-45-A in Wistar Rats with a 4-Week Recovery Period
+#
+# Format: lines beginning "@@PAGE n" start a new page; lines beginning
+# "@@SECTION x.y Title" start a new parent section. The ingestion pipeline
+# (backend/scripts/ingest.py) splits on these markers, chunks the prose, and
+# attaches {study_id, compound, species, route, page, parent_section} metadata.
+
+@@PAGE 1
+@@SECTION 1 Summary
+This Good Laboratory Practice (GLP) study evaluated the systemic toxicity of BAY-45-A
+administered daily by oral gavage to Wistar Han rats for 13 consecutive weeks, followed
+by a 4-week treatment-free recovery period. Four groups of 10 males and 10 females
+received 0 (vehicle control), 25, 75, or 150 mg/kg/day. The no-observed-adverse-effect
+level (NOAEL) was established at 25 mg/kg/day based on clinical signs, hepatocellular
+hypertrophy, and reversible elevations in serum transaminases at higher dose levels.
+
+@@PAGE 12
+@@SECTION 2.1 Materials and Methods - Test System
+Healthy young adult Wistar Han rats were obtained from a licensed supplier and acclimatized
+for 14 days prior to dosing. Animals were housed under controlled conditions (22 +/- 3 C,
+12-hour light/dark cycle) with free access to standard rodent diet and water. The dose
+formulations were prepared in 0.5% aqueous methylcellulose vehicle and administered at a
+constant volume of 10 mL/kg once daily.
+
+@@PAGE 44
+@@SECTION 3.2 Clinical Signs
+Detailed clinical observations were recorded daily throughout the treatment and recovery
+periods. At 150 mg/kg/day, treatment-related clinical signs included piloerection, ataxia,
+and eyes partially closed, observed predominantly within 1 to 3 hours after dosing from
+study week 4 onward. Loose faeces was noted intermittently in high-dose females during
+weeks 6 to 13. These signs were transient, resolving before the next daily dose, and were
+not observed at 25 or 75 mg/kg/day. No clinical signs of toxicological significance were
+observed in the control, 25, or 75 mg/kg/day groups. During the 4-week recovery period,
+all clinical signs resolved completely, indicating reversibility.
+
+@@PAGE 45
+@@SECTION 3.2 Clinical Signs
+A summary of the incidence of clinical signs at 150 mg/kg/day is provided below.
+Piloerection was observed in 8 of 10 males and 9 of 10 females. Ataxia was observed in
+6 of 10 males and 7 of 10 females. Eyes partially closed was observed in 4 of 10 males
+and 5 of 10 females. Loose faeces was observed in 3 of 10 males and 6 of 10 females. No
+salivation, tremors, or convulsions were observed at any dose level.
+
+@@PAGE 58
+@@SECTION 3.4 Body Weight and Food Consumption
+Mean body weight gain was reduced by approximately 12% in high-dose (150 mg/kg/day) males
+relative to controls over the treatment period. Food consumption was correspondingly lower
+in the high-dose group during weeks 1 to 6, after which it recovered. Body weight and food
+consumption were unaffected at 25 and 75 mg/kg/day.
+
+@@PAGE 71
+@@SECTION 3.6 Clinical Pathology
+Serum alanine aminotransferase (ALT) and aspartate aminotransferase (AST) were elevated in
+a dose-dependent manner at 75 and 150 mg/kg/day, reaching approximately 2.1-fold and
+2.8-fold the control mean, respectively, at the high dose at the end of treatment. These
+changes correlated with hepatocellular hypertrophy on histopathology. By the end of the
+4-week recovery period, ALT and AST had returned to values comparable to controls,
+demonstrating reversibility. Haematology parameters were unremarkable at all dose levels.
+
+@@PAGE 96
+@@SECTION 3.8 Histopathology
+Microscopic examination revealed centrilobular hepatocellular hypertrophy in the liver of
+males and females at 75 and 150 mg/kg/day. The change was graded minimal to moderate and
+was considered an adaptive response consistent with hepatic enzyme induction. No hepatocellular
+necrosis, inflammation, or fibrosis was observed. Thyroid, kidney, and other organs examined
+were within normal limits. At the end of the recovery period, hepatocellular hypertrophy had
+substantially resolved.
+
+@@PAGE 110
+@@SECTION 4 Conclusion
+Under the conditions of this study, daily oral administration of BAY-45-A to Wistar rats for
+13 weeks was associated with adaptive hepatocellular hypertrophy and reversible transaminase
+elevation at 75 and 150 mg/kg/day, and transient clinical signs (piloerection, ataxia, eyes
+partially closed, loose faeces) at 150 mg/kg/day. All findings were reversible following a
+4-week recovery period. The NOAEL was determined to be 25 mg/kg/day.

@@ -1,0 +1,26 @@
+# --- Core runtime ---
+couchbase==4.3.3           # Couchbase Python SDK (KV, SQL++/N1QL, FTS, Vector Search)
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+python-dotenv==1.0.1
+
+# --- Agentic orchestration ---
+langgraph==0.2.60          # state-machine "harness" (replaces the PRINCE LangGraph layer)
+langchain-core==0.3.28
+
+# --- LLM + embeddings (OpenAI-compatible, pluggable) ---
+openai==1.59.6             # any OpenAI-compatible endpoint via base_url
+tenacity==9.0.0            # retry / fallback helpers
+numpy==2.2.1
+
+# --- Ingestion (PDF -> text) ---
+pypdf==5.1.0
+
+# --- Observability (optional; used if LANGFUSE_* set) ---
+# langfuse==2.57.0
+
+# --- Dev / test ---
+pytest==8.3.4
+httpx==0.28.1

@@ -1,0 +1,37 @@
+# STUDY_ID: T220145-1
+# COMPOUND: BAY-45-A
+# SPECIES: DOG
+# ROUTE: Oral capsule
+# TITLE: 13-Week Oral Toxicity Study of BAY-45-A in Beagle Dogs
+
+@@PAGE 1
+@@SECTION 1 Summary
+This GLP study assessed the toxicity of BAY-45-A administered orally by capsule to Beagle
+dogs for 13 weeks. Groups of 4 males and 4 females received 0, 3, 10, or 30 mg/kg/day.
+The NOAEL was 10 mg/kg/day, based on gastrointestinal signs and cardiovascular effects at
+30 mg/kg/day.
+
+@@PAGE 40
+@@SECTION 3.2 Clinical Signs
+At 30 mg/kg/day, emesis and salivation were observed in the majority of animals within
+30 minutes to 2 hours after dosing. Emesis occurred in 3 of 4 males and 4 of 4 females.
+Salivation was transient and considered secondary to the emetic response. No clinical signs
+were observed at 3 or 10 mg/kg/day.
+
+@@PAGE 62
+@@SECTION 3.5 Cardiovascular Safety (ECG)
+Electrocardiographic evaluation revealed a treatment-related prolongation of the QT interval
+at 30 mg/kg/day, with a mean increase of approximately 8% relative to baseline at the peak
+plasma concentration timepoint. The heart-rate-corrected QT (QTcV) was similarly increased.
+No QT effects were observed at 3 or 10 mg/kg/day. There were no changes in PR or QRS intervals.
+
+@@PAGE 88
+@@SECTION 3.8 Histopathology
+No test-item-related microscopic findings were observed in the heart or any other organ at
+any dose level. The QT prolongation at 30 mg/kg/day was therefore considered a functional
+electrophysiological effect without structural correlate.
+
+@@PAGE 95
+@@SECTION 4 Conclusion
+The NOAEL for BAY-45-A in the Beagle dog under these conditions was 10 mg/kg/day, based on
+emesis, salivation, and QT interval prolongation observed at 30 mg/kg/day.
