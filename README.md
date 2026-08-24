@@ -1,8 +1,7 @@
 # PRINCE on Couchbase
 
 A faithful, deployable recreation of **PRINCE** (Preclinical Information Center) —
-the agentic RAG + Text-to-SQL system Bayer and Thoughtworks describe in Martin
-Fowler's article [*Building Reliable Agentic AI Systems*](https://martinfowler.com/articles/reliable-llm-bayer.html) —
+the agentic RAG + Text-to-SQL system Bayer and Thoughtworks describe in Sarang Sanjay Kulkarni's article [*Building Reliable Agentic AI Systems*](https://martinfowler.com/articles/reliable-llm-bayer.html) —
 **rebuilt so that every database, search, and state need is served by Couchbase.**
 
 PRINCE originally stitched together five AWS services (PostgreSQL, DynamoDB,
