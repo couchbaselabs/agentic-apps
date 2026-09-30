@@ -1,0 +1,51 @@
+[
+  {
+    "type": "sql_example",
+    "question": "Give me 50 example studies done on RAT",
+    "sql": "SELECT study_id, study_title, compound, species, route, study_type, year FROM studies WHERE species = \"RAT\" LIMIT 50"
+  },
+  {
+    "question": "List all repeat-dose toxicity studies for compound BAY-45-A",
+    "sql": "SELECT study_id, study_title, species, route, duration_weeks, noael_mg_kg_day FROM studies WHERE compound = \"BAY-45-A\" AND study_type = \"Repeat-dose toxicity\" ORDER BY year DESC LIMIT 50"
+  },
+  {
+    "question": "What is the lowest NOAEL recorded for BAY-77-C and in which study?",
+    "sql": "SELECT study_id, study_title, species, noael_mg_kg_day FROM studies WHERE compound = \"BAY-77-C\" AND noael_mg_kg_day IS NOT MISSING ORDER BY noael_mg_kg_day ASC LIMIT 1"
+  },
+  {
+    "question": "How many GLP-compliant studies do we have per species?",
+    "sql": "SELECT species, COUNT(*) AS study_count FROM studies WHERE glp_compliant = true GROUP BY species ORDER BY study_count DESC LIMIT 50"
+  },
+  {
+    "question": "Show chronic toxicity studies longer than 20 weeks in dogs",
+    "sql": "SELECT study_id, study_title, duration_weeks, noael_mg_kg_day FROM studies WHERE species = \"DOG\" AND study_type = \"Chronic toxicity\" AND duration_weeks > 20 ORDER BY duration_weeks DESC LIMIT 50"
+  },
+  {
+    "question": "Which studies used the oral gavage route and were run after 2018?",
+    "sql": "SELECT study_id, study_title, compound, species, year FROM studies WHERE route = \"Oral gavage\" AND year > 2018 ORDER BY year DESC LIMIT 50"
+  },
+  {
+    "question": "Average NOAEL by species for oral studies",
+    "sql": "SELECT species, ROUND(AVG(noael_mg_kg_day), 2) AS avg_noael FROM studies WHERE route LIKE \"Oral%\" AND noael_mg_kg_day IS NOT MISSING GROUP BY species ORDER BY avg_noael ASC LIMIT 50"
+  },
+  {
+    "question": "Find genotoxicity studies and their outcome",
+    "sql": "SELECT study_id, study_title, compound, key_findings FROM studies WHERE study_type = \"Genotoxicity\" LIMIT 50"
+  },
+  {
+    "question": "Which compounds have a carcinogenicity study, and what is its status?",
+    "sql": "SELECT compound, study_id, study_title, report_status FROM studies WHERE study_type = \"Carcinogenicity\" LIMIT 50"
+  },
+  {
+    "question": "Count studies by year for compound BAY-77-C",
+    "sql": "SELECT year, COUNT(*) AS n FROM studies WHERE compound = \"BAY-77-C\" GROUP BY year ORDER BY year ASC LIMIT 50"
+  },
+  {
+    "question": "List studies where the NOAEL is below 20 mg/kg/day",
+    "sql": "SELECT study_id, study_title, compound, species, noael_mg_kg_day FROM studies WHERE noael_mg_kg_day < 20 ORDER BY noael_mg_kg_day ASC LIMIT 50"
+  },
+  {
+    "question": "Show every study for BAY-45-A across all species with duration",
+    "sql": "SELECT study_id, study_title, species, study_type, duration_weeks FROM studies WHERE compound = \"BAY-45-A\" ORDER BY species, duration_weeks LIMIT 50"
+  }
+]
