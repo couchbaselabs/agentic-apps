@@ -1,0 +1,51 @@
+[
+  {
+    "id": "eval-001",
+    "route": "rag",
+    "question": "Were any of the following clinical findings observed in study T123456-2: piloerection, ataxia, eyes partially closed, and loose faeces?",
+    "reference_answer": "Yes. In study T123456-2, all four signs were observed at the high dose of 150 mg/kg/day: piloerection (8/10 males, 9/10 females), ataxia (6/10 males, 7/10 females), eyes partially closed (4/10 males, 5/10 females), and loose faeces (3/10 males, 6/10 females). They were transient, appeared from week 4 onward, and were not seen at 25 or 75 mg/kg/day.",
+    "must_include": ["piloerection", "ataxia", "eyes partially closed", "loose faeces", "150 mg/kg/day"]
+  },
+  {
+    "id": "eval-002",
+    "route": "rag",
+    "question": "What liver findings were seen for BAY-45-A in the 13-week rat study, and were they reversible?",
+    "reference_answer": "Centrilobular hepatocellular hypertrophy was observed at 75 and 150 mg/kg/day, accompanied by dose-dependent ALT/AST elevation. The changes were adaptive and reversible, substantially resolving after a 4-week recovery period.",
+    "must_include": ["hepatocellular hypertrophy", "reversible", "recovery"]
+  },
+  {
+    "id": "eval-003",
+    "route": "rag",
+    "question": "Did BAY-45-A cause any cardiovascular effects in dogs?",
+    "reference_answer": "Yes. In the 13-week Beagle dog study T220145-1, QT interval prolongation (about 8% at peak concentration) was observed at 30 mg/kg/day, with no structural cardiac correlate. No cardiovascular effects occurred at 3 or 10 mg/kg/day.",
+    "must_include": ["QT", "30 mg/kg/day"]
+  },
+  {
+    "id": "eval-004",
+    "route": "sql",
+    "question": "Give me 50 example studies done on RAT",
+    "reference_answer": "A list of rat studies including T123456-2, T123456-3, T410222-1, T510333-1, T800666-1, T920888-1, and T700555-1, with their titles, compounds, and study types.",
+    "must_include": ["RAT"]
+  },
+  {
+    "id": "eval-005",
+    "route": "sql",
+    "question": "What is the lowest NOAEL recorded for BAY-45-A and in which study?",
+    "reference_answer": "The lowest NOAEL for BAY-45-A is 5 mg/kg/day, from the 52-week chronic Beagle dog study T910777-1.",
+    "must_include": ["5", "T910777-1"]
+  },
+  {
+    "id": "eval-006",
+    "route": "sql",
+    "question": "How many GLP-compliant studies do we have per species?",
+    "reference_answer": "A per-species count of GLP-compliant studies, e.g. RAT has the most, followed by DOG, IN_VITRO, and MONKEY.",
+    "must_include": ["RAT"]
+  },
+  {
+    "id": "eval-007",
+    "route": "rag",
+    "question": "Summarize the thyroid findings for BAY-77-C and their human relevance.",
+    "reference_answer": "In the 26-week rat study T410222-1, thyroid follicular cell hypertrophy occurred at 45 mg/kg/day, attributed to a rodent-specific mechanism (enhanced thyroid hormone clearance secondary to hepatic enzyme induction) generally considered of limited relevance to human risk assessment.",
+    "must_include": ["thyroid", "rodent-specific"]
+  }
+]
